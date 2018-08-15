@@ -11,25 +11,20 @@
 	text-align: center;
 	
 }
-h1{
-	font-size: 5em;
-}
-#title{
-	text-align:left;
-}
-#stats{
-	text-align:right;
+#sudoku{
+	font-size: 4em;
 }
 
 .game{
-	padding: 50px 50px;		
+	padding: 50px 5px;		
 	display: inline-block;
 	margin: auto;
 }
-.tracker{
+.tracker{	
 	margin: auto;
-	display:inline-block;
+	padding: 0px 5px;
 }
+.tracker h3{text-align:center;}
 
 #row0 {
 	border-top: 3px solid white;	
@@ -59,10 +54,10 @@ h1{
 input[type = number]{
 	background-color:black;
 	height: 1.5em;
-	width: 1.5em;
+	width: 2em;
 	color: white;
 	border: solid 1px black; 
-	text-align: center;  
+	text-align: right;  
 
 }
 
@@ -76,7 +71,18 @@ div .row{
 	border-bottom: 1px dotted white;
 }
 
-
+@media only screen and (max-width: 600px){
+	#sudoku{font-size: 2em;}
+	div .col {width: 0.25em;}
+	div .row {height: 1.75em;}
+	.game {padding: 10px 5px;}
+	input[type = number]{height: 1.5em; width: 1.60em;font-size: 1em;}
+	h1{font-size: 1.5em; text-align: left;}
+	#instructions{font-size: 1em; text-align: left;}
+	p{text-align:left; font-size: 0.75em;}
+	.tracker h3{font-size: 1em; text-align: left;}
+	.tracker{padding: 10px 15px;}
+}
 
 
 
