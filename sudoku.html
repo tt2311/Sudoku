@@ -14,24 +14,24 @@
 
 <body>
 	<div class = "container-fluid">
-		<h1><b>SUDOKU</b></h1>	
+		<h1 id = "sudoku"><b>SUDOKU</b></h1>	
 		<div class = "game" id ="game1">
-			<h2 id="title">Game 1</h2>
 			<h3 id = "instructions">How to play :</h3>
 			<p> Fill the 9 x 9 grid so that each column, row and each of the nine 3 x 3 boxes contains the digit from 1 to 9. </p>
 			<button onclick="submit()">Submit</button>
 		</div>
 		<div class = "tracker">
-			<h2 id="stats">UserStats</h2>
-			<h3>Number of Tries : </h3>
-			<h3> Timer : </h3>
-
+			<h3 id="tries">Number of Tries : 3</h3> 
+			<button onclick="getHint()">Hint #1</button>
+			<button onclick="getHint2()">Hint #2</button>
+			<button onclick="getHint3()">I GIVE UP</button>
 		</div>
 		
 	</div>
 
 	<script>
 	generateBoard();
+	getNumbers(); 
 	</script>
 
 </body>
